@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Бронирование автобусных билетов</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header class="header">
+    <a href="#" class="logo"> Автобусные билеты</a>
+
+    <nav class="navbar">
+        <div id="close-navbar" class="fas fa-times"></div>
+        <a href="index.html">Главная</a>
+        <a href="about.html">Расписание</a>
+        <a href="courses.html">Рейсы</a>
+        <a href="contact.html">Контакты</a>
+    </nav>
+
+    <div class="icons">
+        <div id="account-btn" class="fas fa-user"></div>
+        <div id="menu-btn" class="fas fa-bars"></div>
+    </div>
+
+</header>
+
+<div class="account-form">
+
+    <div id="close-form" class="fas fa-times"></div>
+
+    <div class="buttons">
+        <span class="btn active login-btn">Войти</span>
+        <span class="btn register-btn">Регистрация</span>
+    </div>
+
+    <form class="login-form active" action="">
+        <input type="email" placeholder="Электронный адрес" class="box">
+        <input type="password" placeholder="Пароль" class="box">
+        <div class="flex">
+            <input type="checkbox" name="" id="remember-me">
+            <label for="remember-me">Запомнить</label>
+            <a href="#">Забыли пароль?</a>
+        </div>
+        <input type="submit" value="Войти" class="btn">
+    </form>
+
+    <form class="register-form" action="">
+        <input type="email" placeholder="Электронный адрес" class="box">
+        <input type="password" placeholder="Пароль" class="box">
+        <input type="password" placeholder="Подтвердить пароль" class="box">
+        <input type="submit" value="Регистрация" class="btn">
+    </form>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+<main>
+
+
+
+    <section class="table">
+        <table id="schedule-table">
+            <thead>
+            <tr>
+                <th>№</th>
+                <th>Откуда</th>
+                <th>Куда</th>
+                <th>Дата</th>
+                <th>Время отправления</th>
+                <th>Время прибытия</th>
+            </tr>
+            </thead>
+            <tbody>
+            <!-- Новые строки будут добавляться здесь -->
+            </tbody>
+        </table>
+
+        <!--            <table>-->
+
+        <!--                <h2>Расписание рейсов</h2>-->
+
+        <!--                <thead>-->
+        <!--                    <tr>-->
+        <!--                        <th> № </th>-->
+        <!--                        <th>Откуда</th>-->
+        <!--                        <th>Куда</th>-->
+        <!--                        <th>Время отправления</th>-->
+        <!--                        <th>Время прибытия</th>-->
+        <!--                    </tr>-->
+        <!--                </thead>-->
+        <!--                <tbody>-->
+        <!--                    <tr>-->
+        <!--                        <td>101</td>-->
+        <!--                        <td>Город А</td>-->
+        <!--                        <td>Город Б</td>-->
+        <!--                        <td>08:00</td>-->
+        <!--                        <td>12:00</td>-->
+        <!--                    </tr>-->
+        <!--                    <tr>-->
+        <!--                        <td>102</td>-->
+        <!--                        <td>Город А</td>-->
+        <!--                        <td>Город Б</td>-->
+        <!--                        <td>08:00</td>-->
+        <!--                        <td>12:00</td>-->
+        <!--                    </tr>-->
+        <!--                    <tr>-->
+        <!--                        <td>103</td>-->
+        <!--                        <td>Город А</td>-->
+        <!--                        <td>Город Б</td>-->
+        <!--                        <td>08:00</td>-->
+        <!--                        <td>12:00</td>-->
+        <!--                    </tr>-->
+        <!--                    <tr>-->
+        <!--                        <td>104</td>-->
+        <!--                        <td>Город А</td>-->
+        <!--                        <td>Город Б</td>-->
+        <!--                        <td>08:00</td>-->
+        <!--                        <td>12:00</td>-->
+        <!--                    </tr>-->
+        <!--                    <tr>-->
+        <!--                        <td>105</td>-->
+        <!--                        <td>Город А</td>-->
+        <!--                        <td>Город Б</td>-->
+        <!--                        <td>08:00</td>-->
+        <!--                        <td>12:00</td>-->
+        <!--                    </tr>-->
+        <!--                </tbody>-->
+        <!--                <tbody>-->
+        <!--                 Новые строки будут добавляться здесь -->
+        <!--                </tbody>-->
+        <!--            </table>-->
+    </section>
+
+
+    <section class="bron">
+
+        <form id="booking-form">
+            <h2>Бронирование билетов</h2>
+            <p>Откуда</p>
+            <input type="text" name="from" placeholder="Город" class="box boxA" required>
+            <p>Куда</p>
+            <input type="text" name="to" placeholder="Город" class="box boxB" required>
+            <p>Когда</p>
+            <input type="date" name="date" class="box boxDate" required>
+            <p>Время отправления</p>
+            <input type="time" name="departure" class="box boxTimeA" required>
+            <p>Время прибытия</p>
+            <input type="time" name="arrival" class="box boxTimeB" required>
+            <input type="submit" value="Бронирование" class="btn">
+        </form>
+
+    </section>
+
+
+</main>
+
+<section class="footer">
+
+    <div class="box-container">
+
+        <div class="box">
+            <h3> Бронирование автобусных билетов </h3>
+            <p>Ошский государственный университет Факультет математики и информационной технологии</p>
+            <div class="share">
+                <a href="#" class="fab fa-facebook-f"></a>
+                <a href="#" class="fab fa-twitter"></a>
+                <a href="#" class="fab fa-instagram"></a>
+                <a href="#" class="fab fa-linkedin"></a>
+            </div>
+        </div>
+
+        <div class="box">
+            <h3>Ссылки</h3>
+            <a href="#" class="link">Главная</a>
+            <a href="#" class="link">Расписание</a>
+            <a href="#" class="link">Рейсы</a>
+            <a href="#" class="link">Контакты</a>
+        </div>
+
+        <div class="box">
+            <h3>Для связи</h3>
+            <p>Для предложений, просьб и жалобы</p>
+            <form action="">
+                <input type="email" name="" placeholder="Ваша эл.почта" id="" class="email">
+                <input type="submit" value="Отправить" class="btn">
+            </form>
+        </div>
+
+    </div>
+
+
+</section>
+
+
+
+
+
+
+
+
+
+
+
+<!-- swiper js link  -->
+<script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+
+<!-- custom js file link  -->
+<script src="js/script.js"></script>
+<script src="js/add.js"></script>
+
+</body>
+</html>
